@@ -36,7 +36,7 @@ int main()
     ipOfServer.sin_family = AF_INET;
     ipOfServer.sin_port = htons(2017);
     ipOfServer.sin_addr.s_addr = inet_addr("127.0.0.1");
-
+ cout<<"For testing"<<endl;
     if(connect(CreateSocket, (struct sockaddr *)&ipOfServer, sizeof(ipOfServer))<0)
     {
         printf("Connection failed due to port and ip problems\n");
